@@ -1,0 +1,86 @@
+body {
+	min-height: 100vh;
+
+}
+
+
+.header {
+	max-width: 500px;
+	margin: auto;
+	padding: 50px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+cont {
+    text-align: center;
+    align-content: center;
+	font-weight: 600;
+	color: rgb(8, 6, 6);
+}
+
+.sombra {
+    box-shadow:0 0 20px rgb(48, 130, 253);
+}
+
+.title {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cards {
+	display: grid;
+	margin: 0 auto;
+	grid-template-columns: repeat(auto-fill, 250px);
+	gap: 20px;
+	justify-content: center;
+	padding-bottom: 40px;
+}
+
+.card {
+	margin: 0 auto;
+	width: 100%;
+	border-radius: 10px;
+	box-shadow:0 0 8px rgb(48, 130, 253);
+}
+
+.card img {
+	max-height: 200px;
+	height: 300px !important;
+	object-fit: cover;
+}
+
+.visitas {
+	margin: 5px;
+	padding: 5px;
+	display: flex;
+	justify-content: center;
+	overflow: hidden;
+	border-radius: 10px;
+}
+
+.itemVisitas {
+	padding: 3px;
+	float: left;
+}
+
+.formulario {
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.botones {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+

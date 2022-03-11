@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="https://www.thymeleaf.org/extras/spring-security">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/css/index.css">
+</head>
+<body class="bg-primary" style="--bs-bg-opacity: .1;">
+    <header>
+        <div class="sombra">
+            <nav class="navbar navbar-light bg-light" >
+                <div class="container">
+                  <a class="navbar-brand" href="#">
+                    <img src="../static/images/Logo2IngerTec.png" alt="" width="94" height="44">
+                  </a>
+                </div>
+              </nav>
+        </div>
+    </header>
+    <div class="title">
+        <h1  th:text="${box}" th:value="${box}">Resources IngerTec</h1>
+    </div>
+    <div id="cards">
+        <div class="card">
+            <img src="../static/images/box-1.png" th:alt=".." class="card-img-top"/>
+            <div class="card-body titulo text-center text-uppercase">
+                <span class="categoria">sistema diseñado para brindar soluciones a pequeñas, medianas o grandes empresas</span>
+                <div class="visitas">
+                    <div class="itemVisitas"><img src="../static/images/icons8-binoculars-16.png" style="max-height: 16px; width: auto;"/></div>
+                    <div id="tab-one" class="itemVisitas" style="max-height: 40px; width: 8px; ">
+                        <input disabled class="cantidad fs-6 align-self-center" value="0" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <img src="../static/images/box-2.png" th:alt=".." class="card-img-top" />
+            </button>
+            <div class="card-body titulo text-center text-uppercase">
+                <span class="categoria">sistema desarrolado para funcionar conjuntamente con una placa IVR</span>
+                <div class="visitas">
+                    <div class="itemVisitas"><img src="../static/images/icons8-binoculars-16.png" style="max-height: 16px; width: auto;"/></div>
+                    <div id="tab-one" class="itemVisitas" style="max-height: 40px; width: 8px; ">
+                        <input disabled class="cantidad fs-6 align-self-center" value="0" />
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="../static/images/box-2.png" th:alt=".." class="card-img-top" />
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary mas" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="../static/images/box-1.png" th:alt=".."
+                class="card-img-top" />
+            <div class="card-body titulo text-center text-uppercase">
+                <span class="categoria" >La aplicacion que le brinda el control total sobre los automatismos de su empresa</span>
+                <div class="visitas">
+                    <div class="itemVisitas"><img src="../static/images/icons8-binoculars-16.png" style="max-height: 16px; width: auto;"/></div>
+                    <div id="tab-one" class="itemVisitas" style="max-height: 40px; width: 8px; ">
+                        <input disabled class="cantidad fs-6 align-self-center" value="0" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                <img src="../static/images/box-5.png" th:alt="..">
+              </button>
+            <div class="card-body titulo text-center text-uppercase">
+                <span class="categoria">La aplicacion que le brinda el control total sobre los nodos de su organizacion</span>
+                <div class="visitas">
+                    <div class="itemVisitas"><img src="../static/images/icons8-binoculars-16.png" style="max-height: 16px; width: auto;"/></div>
+                    <div id="tab-one" class="itemVisitas" style="max-height: 40px; width: 8px; ">
+                        <input disabled class="cantidad fs-6 align-self-center" value="0" />
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="../static/images/box-5.png" th:alt="..">
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Understood</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+        <div  class="card">
+                <img src="../static/images/box-6.png" th:alt=".." class="card-img-top" />
+            <div class="card-body titulo text-center text-uppercase">
+                <span class="categoria">GeonTracker es un sistema dedicado al Seguimiento y Contro de moviles</span>
+                <div class="visitas">
+                    <div class="itemVisitas"><img src="../static/images/icons8-binoculars-16.png" style="max-height: 16px; width: auto;"/></div>
+                    <div id="tab-one" class="itemVisitas" style="max-height: 40px; width: 8px;">
+                        
+                    </div>
+                </div>
+            </div>
+            <input disabled class="cantidad fs-6 align-self-center" value="0" />
+            
+        </div>
+    </div>
+</div>
+<div class="requestajax">
+    <button class="btn btn-primary">Cargar Texto</button>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="../static/js/scrpits.js"></script>
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+</body>
+</html>
